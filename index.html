@@ -156,6 +156,81 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-记·外键之创建、删除" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="�a����֮������ɾ��"><a href="#�a����֮������ɾ��" class="headerlink" title="�ǡ����֮������ɾ��"></a><center>�ǡ����֮������ɾ��</center></h1><hr>
+<p>����ѧϰ���Ƕ�����ϲ�ѯ����������Ҫ����һ������������겻����Ҫɾ�������һʱ���ѵ��ˣ������ϣ��������</p>
+<h1 id="�����������"><a href="#�����������" class="headerlink" title="�����������"></a>�����������</h1><ol>
+<li>�ӱ�Ҫ�½�һ��ͬ��ͬ���͵��ֶ�<br><code>ALTER TABLE table_name ADD �ֶ� �ֶ�����</code></li>
+<li>�ٰѸ��ֶμ������<br><code>ALTER TABLE table_name ADD FOREIGN KEY(�ֶ�) REFERENCES ��������(�����ֶ�);</code></li>
+</ol>
+<p>��Ҫע��������¼��㣺</p>
+<ul>
+<li><p>�������������<strong>Ψһ��</strong>�ֶΣ�����ᱨ�����£�</p>
+<figure class="highlight plain"><figcaption><span>[blog]> alter table article_easyui add constraint `userName` foreign key `userName` references users_easyui(userName);</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near &apos;references users_easyui(userName)&apos; at line 1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>����Ψһ����Ҫ����sql��䣺<br>  <code>ALTER TABLE</code>table_name<code>ADD UNIQUE(</code>user_ame<code>);</code></p>
+</li>
+<li><p>���ɾ����Ҫ��ɾ��Լ��constraint<br><code>ALTER TABLE table_name DROP FOREIGN KEY</code>foreign_name<code>;</code></p>
+</li>
+</ul>
+<h1 id="���ɾ������"><a href="#���ɾ������" class="headerlink" title="���ɾ������"></a><strong>���ɾ������</strong></h1><ol>
+<li><p>�鿴 ���ڲ����ֶ�<br><code>show create table table_name;</code><br>��ѯ������£�</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">------------------------------------------------+</span><br><span class="line">| article_easyui | CREATE TABLE `article_easyui` (</span><br><span class="line">  `article_id` int(11) unsigned NOT NULL,</span><br><span class="line">  `article_title` int(11) NOT NULL,</span><br><span class="line">  `article_content` int(11) NOT NULL,</span><br><span class="line">  `article_timestamp` int(11) NOT NULL,</span><br><span class="line">  `userName` varchar(16) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`article_id`),</span><br><span class="line">  KEY `userName` (`userName`),</span><br><span class="line">  CONSTRAINT `article_easyui_ibfk_1` FOREIGN KEY (`userName`) REFERENCES `users_easyui` (`userName`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=latin1 |</span><br><span class="line">+----------------+--------------------------</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ɾ��Լ��<br><br><code>alter table article_easyui drop foreign key article_easyui_ibfk_1</code></p>
+</li>
+<li><p>ɾ���ֶ�<br><br><code>alter table article_easyui drop id;</code></p>
+</li>
+</ol>
+<ul>
+<li>���� <a href="https://blog.csdn.net/weixin_41000825/article/details/79103252`" target="_blank" rel="noopener">https://blog.csdn.net/weixin_41000825/article/details/79103252`</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/27/记·外键之创建、删除/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-安装hexo框架" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
