@@ -81,13 +81,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/6ZILIULIU" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=291695377&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:291695377@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -122,13 +120,11 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/6ZILIULIU" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=291695377&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:291695377@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -156,16 +152,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-debianIP配置模板" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+
+
+        
+        <a href="/2019/08/29/debianIP配置模板/" class="archive-article-date">
+  	<time datetime="2019-08-29T08:40:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/29/debianIP配置模板/">debianIP配置模板</a>
+    </h1>
+  
+</h1></center>
+      
+      
+        <p><img src="/img/20190829_0.png" alt="avatar" title="debianIP配置"></p>
+<p>#vi /etc/network/interfaces</p>
+<h2 id="配置静态ip"><a href="#配置静态ip" class="headerlink" title="配置静态ip"></a>配置静态ip</h2><p>#自动开启<br>auto eth0</p>
+<p>#地址掩码网关<br>iface eth0 inet static<br>address 192.168.1.5<br>netmask 255.255.255.0<br>gateway 192.168.1.1</p>
+<h2 id="配置动态ip"><a href="#配置动态ip" class="headerlink" title="配置动态ip"></a>配置动态ip</h2><p>auto eth0<br>iface eth0 inet dhcp</p>
+<p>##如果vmware下需要设置静态ip就加入下面的</p>
+<p>#vi /etc/resolv.conf<br>nameserver 192.168.1.1</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/29/debianIP配置模板/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-安装hexo框架" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/27/安装hexo框架/">如何安装个人博客框架Hexo</a>
-    </h1>
-  
+
 
         
         <a href="/2019/08/27/安装hexo框架/" class="archive-article-date">
@@ -175,6 +252,15 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/27/安装hexo框架/">如何安装个人博客框架Hexo</a>
+    </h1>
+  
+</h1></center>
+      
       
         <hr>
 <ul>
@@ -255,11 +341,7 @@
     
       <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/26/git不需要重复输密码/">Git不需要重复输密码</a>
-    </h1>
-  
+
 
         
         <a href="/2019/08/26/git不需要重复输密码/" class="archive-article-date">
@@ -269,6 +351,15 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/git不需要重复输密码/">Git不需要重复输密码</a>
+    </h1>
+  
+</h1></center>
+      
       
         <p>在root目录下，touch创建文件 .git-credentials</p>
 <ul>
@@ -336,11 +427,7 @@
     
       <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/26/记·外键之创建、删除/">记·外键之创建、删除</a>
-    </h1>
-  
+
 
         
         <a href="/2019/08/26/记·外键之创建、删除/" class="archive-article-date">
@@ -350,6 +437,15 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/记·外键之创建、删除/">记·外键之创建、删除</a>
+    </h1>
+  
+</h1></center>
+      
       
         <hr>
 <p>今天学习的是多表联合查询不过首先需要创建一个外键，创建完不对又要删，但这就一时间难到了，查资料，最后解决了</p>
@@ -392,7 +488,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">sql</a>
         		</li>
       		
 		</ul>
@@ -437,11 +533,7 @@
     
       <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/26/linux默认shell/">Linux默认shell</a>
-    </h1>
-  
+
 
         
         <a href="/2019/08/26/linux默认shell/" class="archive-article-date">
@@ -451,6 +543,15 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/linux默认shell/">Linux默认shell</a>
+    </h1>
+  
+</h1></center>
+      
       
         <p>常见的操作系统的shell:</p>
 <ul>
@@ -523,11 +624,7 @@
     
       <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/26/web服务搭建-debian环境/">Web服务搭建--Debian环境</a>
-    </h1>
-  
+
 
         
         <a href="/2019/08/26/web服务搭建-debian环境/" class="archive-article-date">
@@ -537,6 +634,15 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/web服务搭建-debian环境/">Web服务搭建--Debian环境</a>
+    </h1>
+  
+</h1></center>
+      
       
         <h2 id="1-安装nginx-php-php7-0-fpm-mariadb"><a href="#1-安装nginx-php-php7-0-fpm-mariadb" class="headerlink" title="1. 安装nginx+php+php7.0-fpm+mariadb"></a>1. 安装nginx+php+php7.0-fpm+mariadb</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nginx php php-fpm mariadb-server</span><br></pre></td></tr></table></figure>
 
@@ -602,11 +708,7 @@
     
       <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/26/hello-world/">Hello World</a>
-    </h1>
-  
+
 
         
         <a href="/2019/08/26/hello-world/" class="archive-article-date">
@@ -616,6 +718,15 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+        
+        <center><h1>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/26/hello-world/">Hello World</a>
+    </h1>
+  
+</h1></center>
+      
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -765,11 +876,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -778,6 +889,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">sql</a>
               </li>
             
             <div class="clearfix"></div>
@@ -829,27 +944,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="http://106.52.17.87/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>后台demo</a>
             </li>
           
         </ul>
