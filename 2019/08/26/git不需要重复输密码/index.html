@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://6ziliuliu.github.io">
   <title>Git不需要重复输密码 | write less do more .</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在root目录下，touch创建文件 .git-credentials  ‘touch .git-credentials’  用vim编辑此文件  输出以下格式http://username:passwd@github.com">
+  <meta name="description" content="在root目录下，touch创建文件 .git-credentials  ‘touch .git-credentials’  用vim编辑此文件  输出以下格式http://username:passwd@github.com   git push –global credential.helper store 再次push上传，输一次密码就会保存">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git不需要重复输密码">
 <meta property="og:url" content="http://6ziliuliu.github.io/2019/08/26/git不需要重复输密码/index.html">
 <meta property="og:site_name" content="write less do more .">
-<meta property="og:description" content="在root目录下，touch创建文件 .git-credentials  ‘touch .git-credentials’  用vim编辑此文件  输出以下格式http://username:passwd@github.com">
+<meta property="og:description" content="在root目录下，touch创建文件 .git-credentials  ‘touch .git-credentials’  用vim编辑此文件  输出以下格式http://username:passwd@github.com   git push –global credential.helper store 再次push上传，输一次密码就会保存">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-26T07:57:26.344Z">
+<meta property="og:updated_time" content="2019-08-31T15:34:59.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git不需要重复输密码">
-<meta name="twitter:description" content="在root目录下，touch创建文件 .git-credentials  ‘touch .git-credentials’  用vim编辑此文件  输出以下格式http://username:passwd@github.com">
+<meta name="twitter:description" content="在root目录下，touch创建文件 .git-credentials  ‘touch .git-credentials’  用vim编辑此文件  输出以下格式http://username:passwd@github.com   git push –global credential.helper store 再次push上传，输一次密码就会保存">
   
     <link rel="alternative" href="/atom.xml" title="write less do more ." type="application/atom+xml">
   
@@ -185,6 +185,10 @@
 <ul>
 <li>输出以下格式<a href="http://username:passwd@github.com" target="_blank" rel="noopener">http://username:passwd@github.com</a></li>
 </ul>
+<ol>
+<li>git push –global credential.helper store</li>
+<li>再次push上传，输一次密码就会保存</li>
+</ol>
 
       
 
@@ -428,15 +432,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vim</a>
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -453,6 +453,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">sql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vim</a>
               </li>
             
             <div class="clearfix"></div>
