@@ -28,10 +28,10 @@
     scheme: 'Gemini',
     version: '7.3.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":25,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":10,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
     lazyload: false,
@@ -45,7 +45,7 @@
     },
     localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: '',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideDownIn"}},
     translation: {
       copy_button: 'Copy',
       copy_success: 'Copied',
@@ -151,88 +151,91 @@
       
       
         
-        <li class="menu-item menu-item-home">
+        <li class="menu-item menu-item-博客首页">
+      
+    
       
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>博客首页</a>
 
   </li>
       
       
       
         
-        <li class="menu-item menu-item-about">
+        <li class="menu-item menu-item-关于我的">
+      
+    
       
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我的</a>
 
   </li>
       
       
       
         
-        <li class="menu-item menu-item-tags">
+        <li class="menu-item menu-item-全部标签">
+      
+    
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>全部标签</a>
 
   </li>
       
       
       
         
-        <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-文章分类">
+      
+    
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>文章分类</a>
 
   </li>
       
       
       
         
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-文章历程">
+      
+    
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>文章历程</a>
 
   </li>
       
       
       
         
-        <li class="menu-item menu-item-schedule">
+        <li class="menu-item menu-item-搜索全文">
+      
+    
       
     
 
-    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>Schedule</a>
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>搜索全文</a>
 
   </li>
       
       
       
         
-        <li class="menu-item menu-item-sitemap">
+        <li class="menu-item menu-item-网站地图">
+      
+    
       
     
 
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>Sitemap</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-commonweal">
-      
-    
-
-    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>Commonweal 404</a>
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>网站地图</a>
 
   </li>
   </ul>
@@ -246,6 +249,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <a class="book-mark-link book-mark-link-fixed" href="#"></a>
 
 
     <main id="main" class="main">
@@ -321,12 +325,6 @@
     
     
     
-        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
-  <img id="wechat_subscriber_qcode" src="/" alt="唐 晨 wechat" style="width: 200px; max-width: 100%;">
-  <div></div>
-</div>
-
-      
         
       
 
@@ -423,7 +421,7 @@
   <nav class="site-state motion-element">
       <div class="site-state-item site-state-posts">
         
-          <a href="/archives/">
+          <a href="/archives">
         
           <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
@@ -456,6 +454,30 @@
       </div>
     
   </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/6ziliuliu/" title="GitHub &rarr; https://github.com/6ziliuliu/" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:wldmchen@foxmail.com" title="E-Mail &rarr; mailto:wldmchen@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-foxmail"></i>E-Mail</a>
+      </span>
+    
+  </div>
   <div class="cc-license motion-element" itemprop="license">
     
   
@@ -511,7 +533,7 @@
 <script src="/js/utils.js?v=7.3.0"></script><script src="/js/motion.js?v=7.3.0"></script>
 <script src="/js/schemes/pisces.js?v=7.3.0"></script>
 
-<script src="/js/next-boot.js?v=7.3.0"></script>
+<script src="/js/next-boot.js?v=7.3.0"></script><script src="/js/bookmark.js?v=7.3.0"></script>
 
 
 
@@ -533,6 +555,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
 
