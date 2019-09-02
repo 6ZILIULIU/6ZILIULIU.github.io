@@ -264,6 +264,82 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://6ziliuliu.github.io/2019/09/02/数据库的备份与导入/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="唐 晨">
+      <meta itemprop="description" content="博客链接http://6ziliuliu.github.io">
+      <meta itemprop="image" content="/images/u58.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="write less do more .">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/09/02/数据库的备份与导入/" class="post-title-link" itemprop="url">数据库的备份与导入</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-09-02 08:18:55 / Modified: 08:20:13" itemprop="dateCreated datePublished" datetime="2019-09-02T08:18:55+08:00">2019-09-02</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-在命令行直接运行"><a href="#1-在命令行直接运行" class="headerlink" title="1. 在命令行直接运行"></a>1. 在命令行直接运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># mysqldump -uusername -ppasswd blog users_easyui &gt; users_easyui.sql</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-需要先进入要导入的数据库"><a href="#2-需要先进入要导入的数据库" class="headerlink" title="2. 需要先进入要导入的数据库"></a>2. 需要先进入要导入的数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MariaDB [blog]&gt; source D:\users_easyui.sql</span><br></pre></td></tr></table></figure>
+
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://6ziliuliu.github.io/2019/08/31/git操作，删除远程分支文件，本地保留/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1045,84 +1121,6 @@
   </article>
 
     
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://6ziliuliu.github.io/2019/08/26/web服务搭建-debian环境/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="唐 晨">
-      <meta itemprop="description" content="博客链接http://6ziliuliu.github.io">
-      <meta itemprop="image" content="/images/u58.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="write less do more .">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/08/26/web服务搭建-debian环境/" class="post-title-link" itemprop="url">Web服务搭建--Debian环境</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-08-26 13:04:53 / Modified: 15:54:39" itemprop="dateCreated datePublished" datetime="2019-08-26T13:04:53+08:00">2019-08-26</time>
-            </span>
-          
-            
-
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1-安装nginx-php-php7-0-fpm-mariadb"><a href="#1-安装nginx-php-php7-0-fpm-mariadb" class="headerlink" title="1. 安装nginx+php+php7.0-fpm+mariadb"></a>1. 安装nginx+php+php7.0-fpm+mariadb</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nginx php php-fpm mariadb-server</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-开启和开机启动服务"><a href="#2-开启和开机启动服务" class="headerlink" title="2. 开启和开机启动服务"></a>2. 开启和开机启动服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start nginx.service mariadb.service php7.0-fpm.service </span><br><span class="line">systemctl enable nginx.service mariadb.service php7.0-fpm.service</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-配置cgi和pathinfo模式"><a href="#3-配置cgi和pathinfo模式" class="headerlink" title="3. 配置cgi和pathinfo模式"></a>3. 配置cgi和pathinfo模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">location ~ \.php &#123;</span><br><span class="line">     #cgi配置</span><br><span class="line">     root    /var/www/html;</span><br><span class="line">     fastcgi_pass 127.0.0.1:9000;</span><br><span class="line">     #/var/run/php/php7.*-fpm.sock 可以添加上面那条从而使用</span><br><span class="line">     fastcgi_index index.php;</span><br><span class="line">     include fastcgi_params;</span><br><span class="line">     include fastcgi.conf;</span><br><span class="line">     #pathinfo模式</span><br><span class="line">     fastcgi_split_path_info ^(.+\.php)(/.*)$; </span><br><span class="line">     fastcgi_param PATH_INFO $fastcgi_path_info;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </div>
 
   
@@ -1175,7 +1173,7 @@
         
           <a href="/archives">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

@@ -54,18 +54,19 @@
   };
 </script>
 
-  <meta name="description" content="博客链接http://6ziliuliu.github.io">
-<meta name="keywords" content="学习 生活">
-<meta property="og:type" content="website">
-<meta property="og:title" content="write less do more .">
-<meta property="og:url" content="http://6ziliuliu.github.io/archives/index.html">
+  <meta name="description" content="1. 在命令行直接运行1# mysqldump -uusername -ppasswd blog users_easyui &amp;gt; users_easyui.sql  2. 需要先进入要导入的数据库1MariaDB [blog]&amp;gt; source D:\users_easyui.sql">
+<meta name="keywords" content="sql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库的备份与导入">
+<meta property="og:url" content="http://6ziliuliu.github.io/2019/09/02/数据库的备份与导入/index.html">
 <meta property="og:site_name" content="write less do more .">
-<meta property="og:description" content="博客链接http://6ziliuliu.github.io">
+<meta property="og:description" content="1. 在命令行直接运行1# mysqldump -uusername -ppasswd blog users_easyui &amp;gt; users_easyui.sql  2. 需要先进入要导入的数据库1MariaDB [blog]&amp;gt; source D:\users_easyui.sql">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-02T00:20:13.635Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="write less do more .">
-<meta name="twitter:description" content="博客链接http://6ziliuliu.github.io">
-  <link rel="canonical" href="http://6ziliuliu.github.io/archives/">
+<meta name="twitter:title" content="数据库的备份与导入">
+<meta name="twitter:description" content="1. 在命令行直接运行1# mysqldump -uusername -ppasswd blog users_easyui &amp;gt; users_easyui.sql  2. 需要先进入要导入的数据库1MariaDB [blog]&amp;gt; source D:\users_easyui.sql">
+  <link rel="canonical" href="http://6ziliuliu.github.io/2019/09/02/数据库的备份与导入/">
 
 
 <script id="page-configurations">
@@ -73,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | write less do more .</title>
+  <title>数据库的备份与导入 | write less do more .</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -256,360 +257,113 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://6ziliuliu.github.io/2019/09/02/数据库的备份与导入/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="唐 晨">
+      <meta itemprop="description" content="博客链接http://6ziliuliu.github.io">
+      <meta itemprop="image" content="/images/u58.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="write less do more .">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">数据库的备份与导入
+
           
-        
-        <span class="collection-header">Um..! 12 posts in total. Keep on posting.</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="Created: 2019-09-02 08:18:55 / Modified: 08:20:13" itemprop="dateCreated datePublished" datetime="2019-09-02T08:18:55+08:00">2019-09-02</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h2 id="1-在命令行直接运行"><a href="#1-在命令行直接运行" class="headerlink" title="1. 在命令行直接运行"></a>1. 在命令行直接运行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># mysqldump -uusername -ppasswd blog users_easyui &gt; users_easyui.sql</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/02/数据库的备份与导入/" itemprop="url">
-            <span itemprop="name">数据库的备份与导入</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-02T08:18:55+08:00"
-              content="2019-09-02">
-          09-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/31/git操作，删除远程分支文件，本地保留/" itemprop="url">
-            <span itemprop="name">Git操作，删除远程分支文件，本地保留</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-31T23:45:20+08:00"
-              content="2019-08-31">
-          08-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/31/查看宽带密码/" itemprop="url">
-            <span itemprop="name">查看宽带密码</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-31T19:00:36+08:00"
-              content="2019-08-31">
-          08-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/30/markdown添加图片三种方式/" itemprop="url">
-            <span itemprop="name">Markdown添加图片三种方式</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-30T08:13:13+08:00"
-              content="2019-08-30">
-          08-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/30/vim重复命令/" itemprop="url">
-            <span itemprop="name">Vim重复命令</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-30T00:01:59+08:00"
-              content="2019-08-30">
-          08-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/29/debianIP配置模板/" itemprop="url">
-            <span itemprop="name">debianIP配置模板</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-29T16:40:37+08:00"
-              content="2019-08-29">
-          08-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/27/安装hexo框架/" itemprop="url">
-            <span itemprop="name">如何安装个人博客框架Hexo</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-27T08:07:40+08:00"
-              content="2019-08-27">
-          08-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/26/git不需要重复输密码/" itemprop="url">
-            <span itemprop="name">Git不需要重复输密码</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-26T15:55:05+08:00"
-              content="2019-08-26">
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/26/记·外键之创建、删除/" itemprop="url">
-            <span itemprop="name">记·外键之创建、删除</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-26T15:55:05+08:00"
-              content="2019-08-26">
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/08/26/linux默认shell/" itemprop="url">
-            <span itemprop="name">Linux默认shell</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-08-26T15:31:49+08:00"
-              content="2019-08-26">
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+<h2 id="2-需要先进入要导入的数据库"><a href="#2-需要先进入要导入的数据库" class="headerlink" title="2. 需要先进入要导入的数据库"></a>2. 需要先进入要导入的数据库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MariaDB [blog]&gt; source D:\users_easyui.sql</span><br></pre></td></tr></table></figure>
 
 
     </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/sql/" rel="tag"># sql</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/08/31/git操作，删除远程分支文件，本地保留/" rel="next" title="Git操作，删除远程分支文件，本地保留">
+                  <i class="fa fa-chevron-left"></i> Git操作，删除远程分支文件，本地保留
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -628,6 +382,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc" data-target="post-toc-wrap">
@@ -640,6 +399,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在命令行直接运行"><span class="nav-number">1.</span> <span class="nav-text">1. 在命令行直接运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-需要先进入要导入的数据库"><span class="nav-number">2.</span> <span class="nav-text">2. 需要先进入要导入的数据库</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
