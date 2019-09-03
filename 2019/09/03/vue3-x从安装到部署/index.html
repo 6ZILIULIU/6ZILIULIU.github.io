@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="博客链接http://6ziliuliu.github.io"><title>vue3.x从安装到部署 | write less do more .</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">vue3.x从安装到部署</h1><a id="logo" href="/.">write less do more .</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">vue3.x从安装到部署</h1><div class="post-meta">Sep 3, 2019</div><div class="post-content"><h2 id="首先需要安装node和npm"><a href="#首先需要安装node和npm" class="headerlink" title="首先需要安装node和npm"></a>首先需要安装node和npm</h2><ul>
+<li>具体安装方法在菜鸟教程或官方网站有。</li>
+</ul>
+<h2 id="安装vue-cli3"><a href="#安装vue-cli3" class="headerlink" title="安装vue-cli3"></a>安装vue-cli3</h2><p>1.全局安装淘宝镜像cnpm </p>
+<ul>
+<li>npm install -g cnpm </li>
+</ul>
+<ol start="2">
+<li>全局安装vue脚手架</li>
+</ol>
+<ul>
+<li>cnpm install -g vue-cli</li>
+<li>cnpm install -g vue</li>
+<li>安装完可能会出现版本太低(vue create myproject 命令只能vue-cli3才能使用，2.x用的是vue init webpack myproject)<br><img src="/2019/09/03/vue3-x从安装到部署/%E5%AE%89%E8%A3%85vue.png" alt="问题.png"><br><img src="/2019/09/03/vue3-x从安装到部署/%E5%AE%89%E8%A3%85%E5%AE%8C.png" alt="完成.png"></li>
+</ul>
+<ol start="3">
+<li>创建一个vue项目 </li>
+</ol>
+<ul>
+<li>vue create myproject</li>
+</ul>
+<ol start="4">
+<li>进入项目文件夹，运行</li>
+</ol>
+<ul>
+<li>cd myproject</li>
+<li>npm run serve</li>
+</ul>
+<ol start="5">
+<li>打包部署到nginx上</li>
+</ol>
+<ul>
+<li>npm run build</li>
+</ul>
+<h2 id="Vue-Cli-打包之后静态资源路径不对的解决方法"><a href="#Vue-Cli-打包之后静态资源路径不对的解决方法" class="headerlink" title="Vue Cli 打包之后静态资源路径不对的解决方法"></a>Vue Cli 打包之后静态资源路径不对的解决方法</h2><hr>
+<p>打包完会生成dist文件夹，里面有打包完的静态资源文件，部署上服务器直接把这个文件夹复制到服务器根目录，然而这时我遇到个问题，css，js，图片都图读取不进来，找了网上的解决方案如下：</p>
+<ol>
+<li>cli2版本：</li>
+</ol>
+<ul>
+<li>将 config/index.js 里的 assetsPublicPath 的值改为 ‘./‘ 。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">build: &#123;</span><br><span class="line">     ...</span><br><span class="line">     assetsPublicPath: &apos;./&apos;,</span><br><span class="line">     ...  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="2">
+<li>cli3版本：</li>
+</ol>
+<ul>
+<li>在根目录下新建 vue.config.js 文件，然后加上以下内容：（如果已经有此文件就直接修改）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">          publicPath: &apos;&apos;, // 相对于 HTML 页面（目录相同）</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</div><div class="tags"><a href="/tags/vue/">vue</a></div><div class="post-nav"><a class="next" href="/2019/09/02/数据库的备份与导入/">数据库的备份与导入</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://6ziliuliu.github.io"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/vim/" style="font-size: 15px;">vim</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/web/" style="font-size: 15px;">web</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/sql/" style="font-size: 15px;">sql</a> <a href="/tags/win/" style="font-size: 15px;">win</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/09/03/vue3-x从安装到部署/">vue3.x从安装到部署</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/02/数据库的备份与导入/">数据库的备份与导入</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/31/git操作，删除远程分支文件，本地保留/">Git操作，删除远程分支文件，本地保留</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/31/查看宽带密码/">查看宽带密码</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/30/markdown添加图片三种方式/">Markdown添加图片三种方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/30/vim重复命令/">Vim重复命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/29/debianIP配置模板/">debianIP配置模板</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/27/安装hexo框架/">如何安装个人博客框架Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/26/git不需要重复输密码/">Git不需要重复输密码</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/26/记·外键之创建、删除/">记·外键之创建、删除</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">write less do more ..</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
