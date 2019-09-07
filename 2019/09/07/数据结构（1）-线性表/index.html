@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="博客链接http://6ziliuliu.github.io"><title>数据结构（1）之线性表 | write less do more .</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">数据结构（1）之线性表</h1><a id="logo" href="/.">write less do more .</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">数据结构（1）之线性表</h1><div class="post-meta">Sep 7, 2019</div><div class="post-content"><h2 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h2><ol>
+<li><p><strong>线性表</strong>  </p>
+<ul>
+<li>什么是线性表：类似一个数组，线性表</li>
+<li>非空的线性表定义：有且仅有一个头和一个尾，头没有直接前趋，尾没有直接后继</li>
+<li>线性表的两种存储方式，顺序存储和链式存储</li>
+</ul>
+<ol>
+<li><p><strong>顺序线性表</strong>  </p>
+<ul>
+<li>什么是顺序线性表：顺序表，是按照顺序存储在一组地址连续的存储单元</li>
+<li>插入运算：在i和i-1个元素之间插入一个元素</li>
+<li>因为顺序表在物理上也是连续的，所以i到最后一个元素的地址都需要向后移一位。</li>
+<li>需要判断<ul>
+<li>插入的位置是否超出界限</li>
+<li>插入后长度是否超出总长度</li>
+<li>用for循环依次把元素向后移</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>链式线性表</strong>  </p>
+<ul>
+<li>什么是链式线性表：链表，节点在物理上不需要连续</li>
+</ul>
+<ol>
+<li>单链表（线性链表）</li>
+</ol>
+<ul>
+<li>建表法<ol>
+<li>头插法</li>
+<li>尾插法<ul>
+<li>（顾名思义就好，在新增节点时一个从头一个从尾添加）</li>
+</ul>
+</li>
+<li>运算<ol>
+<li>查找运算（带头节点）<ul>
+<li>做法：要查找第i个节点，首先有个头节点序号为0，p指向当前节点，依次寻找下个节点，寻找一次计数器加一，指代计数器等于i就找到了</li>
+</ul>
+</li>
+<li>插入运算<ul>
+<li>做法：要在第i个节点后新增一个节点，要先找到i，把p指向i节点，然后让s指向要加的节点x，修改p指针的next指向s，把s的next指向i+1节点，至此一个三个类似三角形的替换完成（在P54页）</li>
+</ul>
+</li>
+<li>删除运算<ul>
+<li>做法：类似与插入的做法，先找到，然后直接把第i个节点指向i+2节点，即可释放i+节点</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<ol start="2">
+<li><p>循环链表</p>
+<ul>
+<li>与单链表相比，最主要区别在与他的尾节点会指向头节点</li>
+</ul>
+</li>
+<li><p>双向链表</p>
+<ul>
+<li>在循环链表的基础上又增加 双向链接，头即视为尾，尾亦可谓头，每个节点都包含一个next-go和next-back</li>
+</ul>
+</li>
+</ol>
+<p> <strong>总结</strong>：<em>顺序线性表地址上相邻，更适用于查询，缺点是：在做新增、删除、插入动作则需要大量移动节点计算。而链表的优点：在新增、删除、插入的时候只需要做替换指针，不需要移动节点，缺点：查询动作则需要遍历每个节点，性能浪费。</em></p>
+</li>
+</ol>
+</li>
+</ol>
+</div><div class="tags"><a href="/tags/自学考试/">自学考试</a></div><div class="post-nav"><a class="next" href="/2019/09/04/vue指令/">Vue指令</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://6ziliuliu.github.io"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/vim/" style="font-size: 15px;">vim</a> <a href="/tags/vue/" style="font-size: 15px;">vue</a> <a href="/tags/web/" style="font-size: 15px;">web</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/sql/" style="font-size: 15px;">sql</a> <a href="/tags/自学考试/" style="font-size: 15px;">自学考试</a> <a href="/tags/win/" style="font-size: 15px;">win</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/09/07/数据结构（1）-线性表/">数据结构（1）之线性表</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/04/vue指令/">Vue指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/03/vue3-x从安装到部署/">vue3.x从安装到部署</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/02/数据库的备份与导入/">数据库的备份与导入</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/31/git操作，删除远程分支文件，本地保留/">Git操作，删除远程分支文件，本地保留</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/31/查看宽带密码/">查看宽带密码</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/30/markdown添加图片三种方式/">Markdown添加图片三种方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/30/vim重复命令/">Vim重复命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/29/debianIP配置模板/">debianIP配置模板</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/08/27/安装hexo框架/">如何安装个人博客框架Hexo</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">write less do more ..</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
